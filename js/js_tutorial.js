@@ -54,3 +54,28 @@ console.log(course.description)
 console.log(course['duration'])
 
 
+// Value type vs Reference type
+let x = 10;
+let y = x;
+// VAlues of x and y before changing x
+console.log('Value of x, before changing x: ', x)
+console.log('Value of y, before changing x: ', y)
+// Values of x and y after changing x
+x = 20;
+
+console.log('Value of x, after changing x: ', x)
+console.log('Value of y, after changing x: ', y)
+
+// Reference type example
+let Person = {
+    name: 'Piyusha',
+    age: 21
+}
+let anotherPerson = Person;
+// Values of name of Person and anotherPerson before changing Person
+console.log('Before changing name ', Person.name)
+console.log('Before changing name ', anotherPerson.name)
+// Values of name of Person and anotherPerson after changing Person
+Person.name = 'Rajvardhan';
+console.log('After changing name ', Person.name)
+console.log('After changing name ', anotherPerson.name)
