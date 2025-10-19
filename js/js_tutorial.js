@@ -50,3 +50,7 @@ let course = {
 console.log(course)
 console.log(typeof (course))
 
+console.log(course.description)
+console.log(course['duration'])
+
+
