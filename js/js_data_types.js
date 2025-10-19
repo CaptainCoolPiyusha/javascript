@@ -79,3 +79,16 @@ console.log('Before changing name ', anotherPerson.name)
 Person.name = 'Rajvardhan';
 console.log('After changing name ', Person.name)
 console.log('After changing name ', anotherPerson.name)
+
+// When we copy primitive data types, a new copy of the value is created in memory
+// When we copy reerence data types, a new reference to the same object is created in memory
+// Hense, changes made to one reference type variable will affect the other variable as both point to the same object in memory
+// whereas changes made to one primitive type variable will not affect the other variable as both have their own copies in memory
+
+// Arrays in Js are dynamic in size as well as in data type.
+let array = ['Piyusha', 'Raj', 'Kuldeep', 'Siloni', 'Aaji', 23, 21, 52, 47, 70]
+console.log(array)
+console.log(typeof (array[0]))
+console.log(typeof (array[6]))
+array[10] = 'Patil family'
+console.log(array[10])
