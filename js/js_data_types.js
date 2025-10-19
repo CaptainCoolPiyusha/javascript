@@ -86,9 +86,22 @@ console.log('After changing name ', anotherPerson.name)
 // whereas changes made to one primitive type variable will not affect the other variable as both have their own copies in memory
 
 // Arrays in Js are dynamic in size as well as in data type.
-let array = ['Piyusha', 'Raj', 'Kuldeep', 'Siloni', 'Aaji', 23, 21, 52, 47, 70]
-console.log(array)
-console.log(typeof (array[0]))
-console.log(typeof (array[6]))
-array[10] = 'Patil family'
-console.log(array[10])
+let arrya_type = ['Piyusha', 'Raj', 'Kuldeep', 'Siloni', 'Aaji', 23, 21, 52, 47, 70]
+console.log(arrya_type)
+console.log(typeof (arrya_type[0]))
+console.log(typeof (arrya_type[6]))
+arrya_type[10] = 'Patil family'
+console.log(arrya_type[10])
+console.log('Type of arrya_type: ', typeof (arrya_type))
+
+
+// Function in Js
+function greet(name) {
+    console.log('Hello ' + name)
+}
+
+//calling the function
+greet('Piyusha')
+greet('Rajvardhan')
+greet('Kuldeep')
+console.log('Type of function is ', typeof (greet))
