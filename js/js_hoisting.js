@@ -28,3 +28,19 @@ function greet(name) {
 }
 
 greet('Rajvardhan')
+
+// This, Window and Global Object in JS means in short:
+// In a browser environment, the 'window' object represents the global object that contains all global variables and functions.
+// The 'this' keyword, when used in the global context, refers to the 'window' object.
+// Therefore, any global variable or function can be accessed as a property of the 'window' object using 'this' keyword.
+console.log("Value of b, this, window")
+console.log(b)
+console.log(this.b)
+console.log(window.b)
+
+var b = 20;
+
+console.log(b)
+console.log(this.b)
+console.log(window.b)
+console.log(this == window)
