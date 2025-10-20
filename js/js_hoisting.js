@@ -59,4 +59,8 @@ let age = 21;
 const pi = 3.14;
 var name = 'Piyusha';
 
+// Let and const are also hoisted but not initialized
+// Accessing them before declaration will result in ReferenceError due to Temporal Dead Zone (TDZ) (In script we can see it and it's value is 'not available')
+// TDZ is the time between the creation of the variable and its initialization where the variable cannot be accessed.
+
 
