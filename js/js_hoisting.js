@@ -44,3 +44,19 @@ console.log(b)
 console.log(this.b)
 console.log(window.b)
 console.log(this == window)
+
+// Let, Var, Const
+const cint = 10
+// cint = 20 cant reassign const variable
+
+// const and let are strictly block scoped than var
+// we cant access let and const before their declaration like var
+console.log('Age: ', age) // In script tag execution context
+console.log('Pi: ', pi) // In script tag execution context
+console.log('Name: ', name) // var will in Global (if u see in browser window.name))
+
+let age = 21;
+const pi = 3.14;
+var name = 'Piyusha';
+
+
